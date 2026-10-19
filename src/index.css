@@ -1,0 +1,30 @@
+@import '@fontsource/bellefair/400.css';
+@import '@fontsource/assistant/300.css';
+@import '@fontsource/assistant/400.css';
+@import '@fontsource/assistant/600.css';
+@import '@fontsource/cormorant-garamond/300.css';
+@import 'tailwindcss';
+
+@theme {
+  --color-porcelain: #f6f1ec;
+  --color-nude: #e8d5c8;
+  --color-clay: #b98474;
+  --color-clay-deep: #8f5f50;
+  --color-ink: #2a211d;
+  --font-display: 'Bellefair', serif;
+  --font-sans: 'Assistant', system-ui, sans-serif;
+  --font-latin: 'Cormorant Garamond', serif;
+}
+
+html { background: var(--color-porcelain); color: var(--color-ink); }
+body { font-family: var(--font-sans); font-weight: 300; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--color-nude); }
+:focus-visible { outline: 2px solid var(--color-clay-deep); outline-offset: 3px; }
+
+/* Scroll-driven captions: --p (0..1) is written by the scene's ScrollTrigger.
+   Each caption is visible between --a and --b with a short cross-fade. */
+.cap {
+  --o: calc(clamp(0, (var(--p, 0) - var(--a, -1)) / 0.04, 1) * clamp(0, (var(--b, 2) - var(--p, 0)) / 0.04, 1));
+  opacity: var(--o);
+  transform: translateY(calc((1 - var(--o)) * 14px));
+}
