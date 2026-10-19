@@ -1,8 +1,4 @@
-@import '@fontsource/bellefair/400.css';
-@import '@fontsource/assistant/300.css';
-@import '@fontsource/assistant/400.css';
-@import '@fontsource/assistant/600.css';
-@import '@fontsource/cormorant-garamond/300.css';
+@import '@fontsource-variable/rubik/wght.css';
 @import 'tailwindcss';
 
 @theme {
@@ -11,9 +7,9 @@
   --color-clay: #b98474;
   --color-clay-deep: #8f5f50;
   --color-ink: #2a211d;
-  --font-display: 'Bellefair', serif;
-  --font-sans: 'Assistant', system-ui, sans-serif;
-  --font-latin: 'Cormorant Garamond', serif;
+  --font-display: 'Rubik Variable', system-ui, sans-serif;
+  --font-sans: 'Rubik Variable', system-ui, sans-serif;
+  --font-latin: 'Rubik Variable', system-ui, sans-serif;
 }
 
 html { background: var(--color-porcelain); color: var(--color-ink); }

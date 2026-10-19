@@ -73,14 +73,14 @@ export default function App() {
               <h1 className="font-latin text-[clamp(4.5rem,13vw,11rem)] font-light leading-none tracking-[0.18em] text-ink">LUMA</h1>
             </div>
             <div className="cap absolute inset-x-0 bottom-[9vh] px-6 text-center" style={{ '--b': 0.13 } as React.CSSProperties}>
-              <p className="font-display text-[clamp(1.6rem,3.2vw,2.6rem)] leading-tight">העור שלך, רק רגוע יותר.</p>
+              <p className="font-display font-light tracking-[-0.01em] text-[clamp(1.6rem,3.2vw,2.6rem)] leading-tight">העור שלך, רק רגוע יותר.</p>
               <p className="mt-3 text-sm text-ink/70">גללו למטה</p>
             </div>
 
             {/* 0.17 → 0.37 */}
             <div className="cap pointer-events-none absolute inset-x-0 bottom-[12vh] px-6 text-center md:inset-x-auto md:right-[8vw] md:bottom-auto md:top-[38vh] md:text-right" style={{ '--a': 0.17, '--b': 0.37 } as React.CSSProperties}>
-              <p className="font-display text-[clamp(1.7rem,3.4vw,3rem)] leading-[1.15]">כל טיפול מתחיל<br />בשאלה אחת:</p>
-              <p className="mt-2 font-display text-[clamp(1.7rem,3.4vw,3rem)] text-clay-deep">מה נכון לך.</p>
+              <p className="font-display font-light tracking-[-0.01em] text-[clamp(1.7rem,3.4vw,3rem)] leading-[1.15]">כל טיפול מתחיל<br />בשאלה אחת:</p>
+              <p className="mt-2 font-display font-light tracking-[-0.01em] text-[clamp(1.7rem,3.4vw,3rem)] text-clay-deep">מה נכון לך.</p>
             </div>
 
             {/* ring labels — positioned every frame by the scene */}
@@ -91,7 +91,7 @@ export default function App() {
                 className="pointer-events-none absolute left-0 top-0 opacity-0 will-change-transform"
               >
                 <span className="absolute -left-1 -top-1 h-2 w-2 rounded-full bg-clay" />
-                <span className="absolute -translate-x-1/2 -translate-y-[130%] whitespace-nowrap font-display text-lg md:text-2xl md:-translate-x-[105%] md:-translate-y-1/2">
+                <span className="absolute -translate-x-1/2 -translate-y-[130%] whitespace-nowrap font-display font-light tracking-[-0.01em] text-lg md:text-2xl md:-translate-x-[105%] md:-translate-y-1/2">
                   {name}
                 </span>
               </span>
@@ -99,14 +99,14 @@ export default function App() {
 
             {/* 0.88 → end */}
             <div className="cap absolute inset-x-0 top-[12vh] px-6 text-center" style={{ '--a': 0.88 } as React.CSSProperties}>
-              <p className="font-display text-[clamp(2rem,4.4vw,3.8rem)]">ארבעה תחומים. ייעוץ אחד.</p>
+              <p className="font-display font-light tracking-[-0.01em] text-[clamp(2rem,4.4vw,3.8rem)]">ארבעה תחומים. ייעוץ אחד.</p>
               <p className="mx-auto mt-3 max-w-md text-ink/75">כל טיפול ב-LUMA מתחיל בפגישת ייעוץ אישית עם רופא/ה, ורק אחריה מחליטים יחד.</p>
             </div>
           </div>
         </section>
 
         <section id="approach" className="flex min-h-svh items-center justify-center px-6">
-          <p className="font-display text-3xl text-ink/60">כאן ימשיך שאר האתר (שלב הבא)</p>
+          <p className="font-display font-light tracking-[-0.01em] text-3xl text-ink/60">כאן ימשיך שאר האתר (שלב הבא)</p>
         </section>
       </main>
     </>
